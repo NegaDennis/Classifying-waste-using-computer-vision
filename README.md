@@ -20,7 +20,20 @@ In light of that problem, organization A is looking to employ machine learning a
 ## The dataset
 To train and test the model, a dataset consisting of 2,864 real images of 6 different types of wastes (i.e., wastes, namely cardboard, glass, metal, paper, plastic and vegetation) was provisioned.
 
-(add example of each waste type)     
+|Type|Example|
+|---|---|
+|Glass|![Glass_1](https://github.com/user-attachments/assets/d10edfd0-8773-49ac-9521-0b6abd5e5ede)
+|
+|Paper| ![Paper_11](https://github.com/user-attachments/assets/dfd93204-5a2a-4bf7-bc98-2ea7d8784c9a)
+ |
+|Cardboard| ![Cardboard_122](https://github.com/user-attachments/assets/c098c46c-9709-4295-a8b5-b501380d0224)
+ |
+|Plastic| ![Plastic_148](https://github.com/user-attachments/assets/938d30cd-79d2-48cd-a713-eb66160842b2)
+ |
+|Vegetation| ![Vegetation_111](https://github.com/user-attachments/assets/65d35a08-45aa-4a14-9d86-4bea73c51b69)
+ |
+|Metal| ![Metal_109](https://github.com/user-attachments/assets/7b1743f4-56f4-4edf-acaf-829b81037ac8)
+ |
 
 ## The approach
 To tackle the problem and sufficiently make use of the dataset, Python will be the tool of choice. Particularly, Python library, Tensorflow, will be the main character in doing much of the heavy lifting in building a neural network model. Additionally, some standard data analytics libraries will also be employed for background purposes (e.g., dealing with arrays, making dataframes, data visualization).
