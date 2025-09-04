@@ -26,16 +26,16 @@ To train and test the model, a dataset consisting of 2,864 real images of 6 diff
 To tackle the problem and sufficiently make use of the dataset, Python will be the tool of choice. Particularly, Python library, Tensorflow, will be the main character in doing much of the heavy lifting in building a neural network model. Additionally, some standard data analytics libraries will also be employed for background purposes (e.g., dealing with arrays, making dataframes, data visualization).
 
 A list of libraries used in the project can be found below:
-
-(add pictures of library block)
-
+ 
+<img width="665" height="656" alt="libraries" src="https://github.com/user-attachments/assets/2cf09b63-83d2-4880-98eb-89cda1628273" />
+ 
 Since this project aims at experimentation, it will only concerns with documentation and observation of experimented models. The final product would be a comparison table detailing important aspects of performance of the models. (random seed is set so the model is absolutely reproducible using the code file).
 
 ## The development process
 The general stages in development can be found in the below diagram.
-
-(add diagram)
-
+ 
+<img width="1361" height="321" alt="workflow (project 6)-Waste classification drawio" src="https://github.com/user-attachments/assets/2be5dcc1-726f-46bd-8113-7fdcd7066b5a" />
+ 
 Since the scope is entirely on experimenting with AI computer vision capability, there will be no EDA stage. After some preparation of data and folder arrangement, the modelling process commenced promptly. 3 models with different architectures were defined and tried:
 
 1) Traditional, single flatten layer Artificial Neural Network (ANN):
@@ -68,4 +68,6 @@ Model parameters:
 
 ## The result
 
-(TBD)
+The experiment goes through the same process for all models. All three models used the same training and testing data, and are evaluated using the same metrics (e.g., recall, precision, f-1 score). Further exploration was also done to explain the level of performance of each model using different methods(e.g.,confusion matrix, eye-balling images, data visualizations).
+
+Model 1 with ANN architecture fell short with no real classification power. The best Convolutional Artificial Neural Network model (CNN), model 3, returned an overall accuracy of 69% on unseen data (the test set). Its best performing class is 'Vegetaion' (88% accuracy) and worst performing class is 'Plastic'(54% accuracy).
