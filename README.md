@@ -22,7 +22,7 @@ To train and test the model, a dataset consisting of 2,864 real images of 6 diff
 
 |Type|Example|
 |---|---|
-|Glass|![Glass_1](https://github.com/user-attachments/assets/d10edfd0-8773-49ac-9521-0b6abd5e5ede)|
+|Glass|<img width="300" height="150" alt="model 1" src=https://github.com/user-attachments/assets/d10edfd0-8773-49ac-9521-0b6abd5e5ede>|
 |Paper|![Paper_11](https://github.com/user-attachments/assets/dfd93204-5a2a-4bf7-bc98-2ea7d8784c9a)|
 |Cardboard|![Cardboard_122](https://github.com/user-attachments/assets/c098c46c-9709-4295-a8b5-b501380d0224)|
 |Plastic|![Plastic_148](https://github.com/user-attachments/assets/938d30cd-79d2-48cd-a713-eb66160842b2)|
