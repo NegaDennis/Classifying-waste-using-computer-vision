@@ -12,7 +12,7 @@ Waste management is one of the key tasks in maintaining a modern and civil socie
 
 In light of that problem, organization A is looking to employ machine learning and AI to alleviate the workload. Particularly, computer vision comes to mind as a great assistance to waste classification, an important stage in waste management. Instead of having people manually seperating one type of trash from another, an AI would process pictures of waste and determine waste type and eliminate the need for a menial and time/resource-consuming task.
 
-## The dataset (TBD)
+## The dataset
 To train and test the model, a dataset consisting of 2,864 real images of 6 different types of wastes (i.e., wastes, namely cardboard, glass, metal, paper, plastic and vegetation) was provisioned.
 
 (add example of each waste type)     
@@ -33,8 +33,34 @@ The general stages in development can be found in the below diagram.
 
 Since the scope is entirely on experimenting with AI computer vision capability, there will be no EDA stage. After some preparation of data and folder arrangement, the modelling process commenced promptly. 3 models with different architectures were defined and tried:
 
-|Model|Description|Parameters|
-|---|---|---|
-|Traditional, single flatten layer Artificial Neural Network (ANN)|The first model developed has a traditional ANN architecture. In this instance, the model contains only one flatten layer, one hidden layer, one additional layer, and the output layer. All layers are fully connected.|In the first layer, The models takes in the parameters about the images' resolution (i.e., 50x50), and uses 3 color channels to interpret 2-D images as 1-D vectors (flattened). <br> The second layer is composed of 128 neurons and uses Rectified Linear Unit activation function. <br> The third layer uses 'Dropout' method that randomly sets 20% of input values into 0 to avoid overfitting. <br> The final layer uses the same number of neurons as the number of classes of waste (i.e.,6), and uses softmax as the activation function which shows a probability distribution over possible classifications.|
+1) Traditional, single flatten layer Artificial Neural Network (ANN):
+
+Model architecture: The first model developed has a traditional ANN architecture. In this instance, the model contains only one flatten layer, one hidden layer, one additional layer, and the output layer. All layers are fully connected.
+
+Model parameters:
+  - In the first layer, The models takes in the parameters about the images' resolution (i.e., 50x50), and uses 3 color channels to interpret 2-D images as 1-D vectors (flattened).
+  - The second layer is composed of 128 neurons and uses Rectified Linear Unit activation function.
+  - The third layer uses 'Dropout' method that randomly sets 20% of input values into 0 to avoid overfitting.
+  - The final layer uses the same number of neurons as the number of classes of waste (i.e.,6), and uses softmax as the activation function which shows a probability distribution over possible classifications.
+
+2) Convolutional layers CNN:
+
+Model architecture: In addition to all the layers of the first model, this model uses additional ones with convolution technique to increase the accuracy of predictions. In more detail, the first layer will take in the images' data as input and uses convolutional analysis to intepret the data. The second layer uses MaxPooling method to reduce the spatial dimensions and downsample the input. Another layer of Dropout is added to avoid overfitting and then the layers of the first model are added.
+
+Model parameters:
+  - In the first layer, The model uses 2-dimensional convolutional technique to interpret the images' data with a kernel size of 3x3. It still uses Rectified Linear Unit as activation function and the same input shape like the first model. This layer also takes a parameters of 50 filters, having the kernel "slides" across the images in 50 different areas with size 3x3.
+  - The second layer, MaxPooling, uses a pool size of 2x2. Tihs means it will condense the feature maps (i.e., the images being divided into pixels) into smaller ones by taking out the maximum value of every block of pixel with size 2x2.
+  - The third layer uses Dropout method that randomly sets 25% of input values into 0 to avoid overfitting.
+  - The remaining layers are essentially the same as the first model with the only difference being the rate of Dropout being 50% instead.
+
+3) Convolutional layers CNN with different parameters:
+
+Model architecture: This model's architecture is the same as the second model. Only some hyperparameters were tweaked.
+
+Model parameters:
+  - The first difference is in the first layer, having the number of filters being 32 instead of 50.
+  - The second difference is in the second Dropout layer having a transformation ratio of 0.4 instead of 0.5.
 
 ## The result
+
+(TBD)
