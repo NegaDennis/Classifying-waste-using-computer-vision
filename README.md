@@ -8,6 +8,11 @@ One important note is that the project will be done using Google Colab as a plat
 For this reason, only 3 model architectures were covered in the experiment. The fine tuning process is also very modest due to the same reason. More detail on this matter will be discussed in the develop process section.
 
 ## The problem
+
+![waste management](https://github.com/user-attachments/assets/6a123c89-dcb1-4564-9ed5-9994618b85d3)
+Photo by <a href="https://unsplash.com/@filmbetrachterin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jas Min</a> on <a href="https://unsplash.com/photos/assorted-plastic-bottles-in-black-plastic-bucket-CIItgnBEOgw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
+
 Waste management is one of the key tasks in maintaining a modern and civil society. Using traditional methods, handling such task is getting increasing harder and can get overwhelmed by the amount of trash an ever-increasing population produce.
 
 In light of that problem, organization A is looking to employ machine learning and AI to alleviate the workload. Particularly, computer vision comes to mind as a great assistance to waste classification, an important stage in waste management. Instead of having people manually seperating one type of trash from another, an AI would process pictures of waste and determine waste type and eliminate the need for a menial and time/resource-consuming task.
