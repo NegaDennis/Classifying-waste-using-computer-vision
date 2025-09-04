@@ -35,9 +35,6 @@ Since the scope is entirely on experimenting with AI computer vision capability,
 
 |Model|Description|Parameters|
 |---|---|---|
-|Traditional, single flatten layer Artificial Neural Network (ANN)|The first model developed has a traditional ANN architecture. In this instance, the model contains only one flatten layer, one hidden layer, one additional layer, and the output layer. All layers are fully connected.|In the first layer, The models takes in the parameters about the images' resolution (i.e., 50x50), and uses 3 color channels to interpret 2-D images as 1-D vectors (flattened).
-The second layer is composed of 128 neurons and uses Rectified Linear Unit activation function.
-The third layer uses 'Dropout' method that randomly sets 20% of input values into 0 to avoid overfitting.
-The final layer uses the same number of neurons as the number of classes of waste (i.e.,6), and uses softmax as the activation function which shows a probability distribution over possible classifications.|
+|Traditional, single flatten layer Artificial Neural Network (ANN)|The first model developed has a traditional ANN architecture. In this instance, the model contains only one flatten layer, one hidden layer, one additional layer, and the output layer. All layers are fully connected.|In the first layer, The models takes in the parameters about the images' resolution (i.e., 50x50), and uses 3 color channels to interpret 2-D images as 1-D vectors (flattened). <br> The second layer is composed of 128 neurons and uses Rectified Linear Unit activation function. <br> The third layer uses 'Dropout' method that randomly sets 20% of input values into 0 to avoid overfitting. <br> The final layer uses the same number of neurons as the number of classes of waste (i.e.,6), and uses softmax as the activation function which shows a probability distribution over possible classifications.|
 
 ## The result
