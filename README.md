@@ -75,5 +75,3 @@ Model parameters:
 The experiment goes through the same process for all models. All three models used the same training and testing data, and are evaluated using the same metrics (e.g., recall, precision, f-1 score). Further exploration was also done to explain the level of performance of each model using different methods(e.g.,confusion matrix, eye-balling images, data visualizations).
 
 Model 1 with ANN architecture fell short with no real classification power. Model 3 with CNN architecture and refined layer hyper-parameters returned an overall accuracy of 69% on unseen data (the test set). Its best performing class is 'Vegetaion' (85% accuracy) and worst performing class is 'Plastic'(54% accuracy).
-
-(Will add more)
